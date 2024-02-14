@@ -16,6 +16,7 @@ body {
 
 .input-group {
     margin-bottom: 15px;
+    margin-right: 20px;
 }
 
 .input-group label {
@@ -51,4 +52,16 @@ button:hover {
     border: 1px solid #c3e6cb;
     border-radius: 4px;
     display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
