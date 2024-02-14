@@ -15,4 +15,4 @@ function calculateMPGe() {
     resultElement.style.display = 'block';
 }
 
-// You can add event listeners here if you prefer to use them instead of inline 'onclick' attribute
+
