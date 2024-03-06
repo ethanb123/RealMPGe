@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Vehicle MPGe Calculator</title>
+    <title>Vehicle Fuel Cost Comparison Tool</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>EV MPGe Calculator</h1>
-        <div class="input-group">
-            <label for="gasPrice">Gas Price ($/gallon):</label>
-            <input type="number" id="gasPrice" value="3.20" step="0.01" pattern="^\d*(\.\d{0,2})?$">
-        </div>
-        <div class="input-group">
-            <label for="electricPrice">Electric Price ($/kWh):</label>
-            <input type="number" id="electricPrice" value="0.40" step="0.01" pattern="^\d*(\.\d{0,2})?$">
-        </div>
-        <div class="input-group">
-            <label for="gasMPG">Gas Vehicle MPG:</label>
-            <input type="number" id="gasMPG" value="35" step="0.1">
-        </div>
-        <div class="input-group">
-            <label for="electricMiPerkWh">Electric Vehicle Mi/kWh:</label>
-            <input type="number" id="electricMiPerkWh" value="3.4" step="0.1">
-        </div>
-        <button onclick="calculateMPGe()">Calculate MPGe</button>
-        <div id="result"></div>
+    <div id="topbar">
+        <h1>Vehicle Fuel Cost Comparison</h1>
     </div>
+    <div id="container">
+        
+        
+        <!-- Rates Box -->
+        <div class="box" id="ratesBox">
+            <h2>Rates</h2>
+            <label for="gasPrice">Gas Price ($/gallon)</label>
+            <input type="number" id="gasPrice" placeholder="e.g., 3.20">
+            
+            <label for="electricPrice">Electric Price ($/kWh)</label>
+            <input type="number" id="electricPrice" placeholder="e.g., 0.19">
+        </div>
+        
+        <!-- Usage Box -->
+        <div class="box" id="usageBox">
+            <h2>Usage</h2>
+            <label for="milesYear">Miles per Year</label>
+            <input type="number" id="milesYear" placeholder="e.g., 12000">
+            
+            <label for="yearsOwnership">Years of Ownership</label>
+            <input type="number" id="yearsOwnership" placeholder="e.g., 5">
+        </div>
+        
+        <!-- Vehicle #1 Box -->
+        <div class="box" id="vehicle1Box">
+            <h2>Vehicle #1</h2>
+            <select id="vehicle1Type">
+                <option value="gas">Gas Vehicle</option>
+                <option value="electric">Electric Vehicle</option>
+            </select>
+            <label for="vehicle1Efficiency">Efficiency</label>
+            <input type="number" id="vehicle1Efficiency" placeholder="MPG or Mi/kWh">
+        </div>
+        
+        <!-- Vehicle #2 Box -->
+        <div class="box" id="vehicle2Box">
+            <h2>Vehicle #2</h2>
+            <select id="vehicle2Type">
+                <option value="gas">Gas Vehicle</option>
+                <option value="electric">Electric Vehicle</option>
+            </select>
+            <label for="vehicle2Efficiency">Efficiency</label>
+            <input type="number" id="vehicle2Efficiency" placeholder="MPG or Mi/kWh">
+        </div>
+        
+        <!-- Calculation and Output Section -->
+        <button id="calculate">Calculate</button>
+        <div class="outputBox" id="output">
+            <div id="mpgEquivalent"></div>
+            <div id="costGraph"></div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

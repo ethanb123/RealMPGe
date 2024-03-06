@@ -1,18 +1,29 @@
-function calculateMPGe() {
-    const gasPrice = parseFloat(document.getElementById('gasPrice').value);
-    const electricPrice = parseFloat(document.getElementById('electricPrice').value);
-    const gasMPG = parseFloat(document.getElementById('gasMPG').value);
-    const electricMiPerkWh = parseFloat(document.getElementById('electricMiPerkWh').value);
+document.getElementById('calculate').addEventListener('click', function() {
+    // Read input values
+    var gasPrice = parseFloat(document.getElementById('gasPrice').value);
+    var electricPrice = parseFloat(document.getElementById('electricPrice').value);
+    var milesYear = parseFloat(document.getElementById('milesYear').value);
+    var yearsOwnership = parseFloat(document.getElementById('yearsOwnership').value);
+    
+    var vehicle1Type = document.getElementById('vehicle1Type').value;
+    var vehicle1Efficiency = parseFloat(document.getElementById('vehicle1Efficiency').value);
+    
+    var vehicle2Type = document.getElementById('vehicle2Type').value;
+    var vehicle2Efficiency = parseFloat(document.getElementById('vehicle2Efficiency').value);
+    
+    // Calculate electric cost per mile
+    var electricCostPerMile = (vehicle1Type === 'electric') 
+        ? electricPrice / vehicle1Efficiency 
+        : electricPrice / vehicle2Efficiency;
 
-    // Calculate the cost to drive an electric car 1 mile
-    const electricCostPerMile = electricPrice / electricMiPerkWh;
+    // Calculate MPG equivalent for electric vehicle
+    var electricCarMPGe = gasPrice / electricCostPerMile;
 
-    // Calculate the equivalent MPG for the electric car
-    const electricCarMPGe = gasPrice / electricCostPerMile;
+    // Update the output
+    document.getElementById('mpgEquivalent').innerText = 'Electric Car MPGe: ' + electricCarMPGe.toFixed(2);
 
-    const resultElement = document.getElementById('result');
-    resultElement.innerText = `The electric car has an equivalent MPG of ${electricCarMPGe.toFixed(2)} MPGe`;
-    resultElement.style.display = 'block';
-}
+    // TODO: Implement graph comparison logic here
+    
+});
 
 
