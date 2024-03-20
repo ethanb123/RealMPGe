@@ -57,12 +57,90 @@
         
         <!-- Calculation and Output Section -->
         <button id="calculate">Calculate</button>
+        
+        <div id="costGraph"></div>
+        
+                    <!-- Include the ApexCharts library -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+        <!-- Your existing HTML code... -->
         <div class="outputBox" id="output">
             <div id="mpgEquivalent"></div>
-            <div id="costGraph"></div>
+            <div id="chart"></div>
+        </div>
+
+        <script>
+        // Define your chart options and series
+        var options = {
+            chart: {
+                type: 'bar'
+            },
+            series: [{
+                name: 'Vehicle Efficiency',
+                data: [0, 0] // Initialize with no data
+            }],
+            xaxis: {
+                categories: ['Vehicle 1', 'Vehicle 2'],
+                labels: {
+                    style: {
+                        fontSize: '20px'
+                    }
+                }
+            },
+            yaxis: {
+                title: {
+                    text: 'Efficiency (MPG or Mi/kWh)',
+                    style: {
+                        fontSize: '12px'
+                    }
+                },
+                labels: {
+                    style: {
+                        fontSize: '18px'
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                style: {
+                    fontSize: '40px',
+                    colors: ["#304758"]
+                }
+            }
+        }
+
+        // Use the ApexCharts object to create a new chart
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+        // Handle the calculate button click event
+        document.getElementById('calculate').addEventListener('click', function() {
+            // Get the efficiency values from the input fields
+            var vehicle1Efficiency = document.getElementById('vehicle1Efficiency').value;
+            var vehicle2Efficiency = document.getElementById('vehicle2Efficiency').value;
+
+            // Check if the selected vehicle is an Electric Car
+            var vehicle1Type = document.getElementById('vehicle1Type').value;
+            var vehicle2Type = document.getElementById('vehicle2Type').value;
+            var electricPrice = parseFloat(document.getElementById('electricPrice').value);
+            var gasPrice = parseFloat(document.getElementById('gasPrice').value);
+
+            if (vehicle1Type === 'electric') {
+                vehicle1Efficiency = vehicle1Efficiency/(electricPrice/gasPrice); // Use the calculated electricCarMPGe value
+            }
+            if (vehicle2Type === 'electric') {
+                vehicle2Efficiency = vehicle2Efficiency/(electricPrice/gasPrice); // Use the calculated electricCarMPGe value
+            }
+
+            // Update the chart data with the new efficiency values
+            chart.updateSeries([{
+                data: [vehicle1Efficiency, vehicle2Efficiency]
+            }]);
+        });
+        </script>
+            <script src="script.js"></script>         
         </div>
     </div>
     
-    <script src="script.js"></script>
 </body>
 </html>
