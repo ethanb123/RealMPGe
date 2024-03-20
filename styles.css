@@ -73,7 +73,7 @@ input, select, button {
 }
 
 button#calculate {
-    background-color: #4CAF50;
+    background-color: #0072c9;
     color: white;
     border: none;
     cursor: pointer;
