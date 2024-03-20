@@ -22,7 +22,28 @@ document.getElementById('calculate').addEventListener('click', function() {
     // Update the output
     document.getElementById('mpgEquivalent').innerText = 'Electric Car MPGe: ' + electricCarMPGe.toFixed(2);
 
-    // TODO: Implement graph comparison logic here
+    // Calculate MPGe if the vehicle is electric
+    if (vehicle1Type === 'electric') {
+        vehicle1Efficiency = (vehicle1Efficiency/(electricPrice/gasPrice)).toFixed(2); // Use the calculated electricCarMPGe value
+    }
+    if (vehicle2Type === 'electric') {
+        vehicle2Efficiency = (vehicle2Efficiency/(electricPrice/gasPrice)).toFixed(2); // Use the calculated electricCarMPGe value
+    }
+
+    // Set the color based on the type of vehicle
+    var vehicle1Color = vehicle1Type === 'electric' ? '#72b644' : '#f26937';
+    var vehicle2Color = vehicle2Type === 'electric' ? '#72b644' : '#f26937';
+
+    // Update the chart colors
+    chart.updateOptions({
+        colors: [vehicle1Color, vehicle2Color]
+    });
+
+    // Update the chart data with the new efficiency values
+    chart.updateSeries([{
+        data: [vehicle1Efficiency, vehicle2Efficiency]
+    }]);
+
     
 });
 
