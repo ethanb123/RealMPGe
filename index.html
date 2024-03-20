@@ -141,15 +141,16 @@
             var vehicle1Color = vehicle1Type === 'electric' ? '#346beb' : '#eb8034';
             var vehicle2Color = vehicle2Type === 'electric' ? '#346beb' : '#eb8034';
 
+            // Update the chart colors
+            chart.updateOptions({
+                colors: [vehicle1Color, vehicle2Color]
+            });
+
             // Update the chart data with the new efficiency values
             chart.updateSeries([{
                 data: [vehicle1Efficiency, vehicle2Efficiency]
             }]);
 
-            // Update the chart colors
-            chart.updateOptions({
-                colors: [vehicle1Color, vehicle2Color]
-            });
         });
         </script>
             <script src="script.js"></script>         
