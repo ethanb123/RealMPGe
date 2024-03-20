@@ -12,7 +12,6 @@
     </div>
     <div id="container">
         
-        
         <!-- Rates Box -->
         <div class="box" id="ratesBox">
             <h2>Rates</h2>
@@ -58,7 +57,6 @@
         <!-- Calculation and Output Section -->
         <button id="calculate">Calculate</button>
         
-        <div id="costGraph"></div>
         <!-- Include the ApexCharts library -->
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
@@ -68,56 +66,56 @@
         </div>
 
         <script>
-        // Define your chart options and series
-        var options = {
-            plotOptions: {
-                bar: {
-                    distributed: true
-                }
-            },
-            chart: {
-                type: 'bar'
-            },
-            series: [{
-                name: 'Vehicle Efficiency',
-                data: [0, 0] // Initialize with no data
-            }],
-            xaxis: {
-                categories: ['Vehicle 1', 'Vehicle 2'],
-                labels: {
-                    style: {
-                        fontSize: '20px'
-                    }
-                }
-            },
-            yaxis: {
-                title: {
-                    text: 'Efficiency (MPG or Real MPGe)',
-                    style: {
-                        fontSize: '12px'
+            // Define your chart options and series
+            var options = {
+                plotOptions: {
+                    bar: {
+                        distributed: true
                     }
                 },
-                labels: {
-                    style: {
-                        fontSize: '18px'
+                chart: {
+                    type: 'bar'
+                },
+                series: [{
+                    name: 'Vehicle Efficiency',
+                    data: [0, 0] // Initialize with no data
+                }],
+                xaxis: {
+                    categories: ['Vehicle 1', 'Vehicle 2'],
+                    labels: {
+                        style: {
+                            fontSize: '20px'
+                        }
                     }
-                }
-            },
-            dataLabels: {
-                enabled: true,
-                style: {
-                    fontSize: '40px'
-                }
-            },
-            colors: ["#304758", "#eb8034"]
-        }
+                },
+                yaxis: {
+                    title: {
+                        text: 'Efficiency (MPG or Real MPGe)',
+                        style: {
+                            fontSize: '12px'
+                        }
+                    },
+                    labels: {
+                        style: {
+                            fontSize: '18px'
+                        }
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        fontSize: '40px'
+                    }
+                },
+                colors: ["#304758", "#eb8034"]
+            }
 
-        // Use the ApexCharts object to create a new chart
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-
+            // Use the ApexCharts object to create a new chart
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
         </script>
-            <script src="script.js"></script>         
+
+        <script src="script.js"></script>         
         </div>
     </div>
     
