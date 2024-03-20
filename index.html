@@ -72,6 +72,11 @@
         <script>
         // Define your chart options and series
         var options = {
+            plotOptions: {
+                bar: {
+                    distributed: true
+                }
+            },
             chart: {
                 type: 'bar'
             },
@@ -103,10 +108,10 @@
             dataLabels: {
                 enabled: true,
                 style: {
-                    fontSize: '40px',
-                    colors: ["#304758"]
+                    fontSize: '40px'
                 }
-            }
+            },
+            colors: ["#304758", "#eb8034"]
         }
 
         // Use the ApexCharts object to create a new chart
@@ -132,10 +137,19 @@
                 vehicle2Efficiency = vehicle2Efficiency/(electricPrice/gasPrice); // Use the calculated electricCarMPGe value
             }
 
+             // Set the color based on the type of vehicle
+            var vehicle1Color = vehicle1Type === 'electric' ? '#346beb' : '#eb8034';
+            var vehicle2Color = vehicle2Type === 'electric' ? '#346beb' : '#eb8034';
+
             // Update the chart data with the new efficiency values
             chart.updateSeries([{
                 data: [vehicle1Efficiency, vehicle2Efficiency]
             }]);
+
+            // Update the chart colors
+            chart.updateOptions({
+                colors: [vehicle1Color, vehicle2Color]
+            });
         });
         </script>
             <script src="script.js"></script>         
