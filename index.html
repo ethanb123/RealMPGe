@@ -131,10 +131,10 @@
             var gasPrice = parseFloat(document.getElementById('gasPrice').value);
 
             if (vehicle1Type === 'electric') {
-                vehicle1Efficiency = vehicle1Efficiency/(electricPrice/gasPrice); // Use the calculated electricCarMPGe value
+                vehicle1Efficiency = (vehicle1Efficiency/(electricPrice/gasPrice)).toFixed(2); // Use the calculated electricCarMPGe value
             }
             if (vehicle2Type === 'electric') {
-                vehicle2Efficiency = vehicle2Efficiency/(electricPrice/gasPrice); // Use the calculated electricCarMPGe value
+                vehicle2Efficiency = (vehicle2Efficiency/(electricPrice/gasPrice)).toFixed(2); // Use the calculated electricCarMPGe value
             }
 
              // Set the color based on the type of vehicle
