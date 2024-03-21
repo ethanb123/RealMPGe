@@ -1,0 +1,2018 @@
+[
+  {
+    "Make": "AUDI",
+    "Model": "e-tron GT",
+    "Fuel": "Electricity",
+    "City MPG": 81,
+    "Hwy MPG": 83,
+    "Cmb MPG": 2.43
+  },
+  {
+    "Make": "AUDI",
+    "Model": "e-tron quattro",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 79,
+    "Cmb MPG": 2.34
+  },
+  {
+    "Make": "AUDI",
+    "Model": "e-tron S (20in. wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 72,
+    "Hwy MPG": 75,
+    "Cmb MPG": 2.17
+  },
+  {
+    "Make": "AUDI",
+    "Model": "e-tron S (21/22 in. wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 62,
+    "Hwy MPG": 64,
+    "Cmb MPG": 1.87
+  },
+  {
+    "Make": "AUDI",
+    "Model": "e-tron S Sportback (20 wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 73,
+    "Hwy MPG": 78,
+    "Cmb MPG": 2.23
+  },
+  {
+    "Make": "AUDI",
+    "Model": "e-tron S Sportback (21/22 wheel)",
+    "Fuel": "Electricity",
+    "City MPG": 64,
+    "Hwy MPG": 66,
+    "Cmb MPG": 1.93
+  },
+  {
+    "Make": "AUDI",
+    "Model": "e-tron Sportback quattro",
+    "Fuel": "Electricity",
+    "City MPG": 77,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "AUDI",
+    "Model": "Q4 e-tron",
+    "Fuel": "Electricity",
+    "City MPG": 30,
+    "Hwy MPG": 36,
+    "Cmb MPG": 0.98
+  },
+  {
+    "Make": "AUDI",
+    "Model": "Q4 e-tron quattro",
+    "Fuel": "Electricity",
+    "City MPG": 97,
+    "Hwy MPG": 87,
+    "Cmb MPG": 2.76
+  },
+  {
+    "Make": "AUDI",
+    "Model": "Q4 e-tron Sportback",
+    "Fuel": "Electricity",
+    "City MPG": 100,
+    "Hwy MPG": 89,
+    "Cmb MPG": 2.82
+  },
+  {
+    "Make": "AUDI",
+    "Model": "RS e-tron GT",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.4
+  },
+  {
+    "Make": "BMW",
+    "Model": "i4 eDrive 35 Gran Coupe (19'' Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 107,
+    "Hwy MPG": 102,
+    "Cmb MPG": 3.12
+  },
+  {
+    "Make": "BMW",
+    "Model": "i4 eDrive35 Gran Coupe (18'' Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 115,
+    "Hwy MPG": 111,
+    "Cmb MPG": 3.35
+  },
+  {
+    "Make": "BMW",
+    "Model": "i4 eDrive40 Gran Coupe (18\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 109,
+    "Hwy MPG": 108,
+    "Cmb MPG": 3.23
+  },
+  {
+    "Make": "BMW",
+    "Model": "i4 eDrive40 Gran Coupe (19\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 100,
+    "Hwy MPG": 98,
+    "Cmb MPG": 2.94
+  },
+  {
+    "Make": "BMW",
+    "Model": "i4 M50 Gran Coupe (19\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 94,
+    "Hwy MPG": 98,
+    "Cmb MPG": 2.85
+  },
+  {
+    "Make": "BMW",
+    "Model": "i4 M50 Gran Coupe (20\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.37
+  },
+  {
+    "Make": "BMW",
+    "Model": "i7 xDrive60 Sedan (19'' Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 87,
+    "Hwy MPG": 92,
+    "Cmb MPG": 2.64
+  },
+  {
+    "Make": "BMW",
+    "Model": "i7 xDrive60 Sedan (20'' Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 81,
+    "Hwy MPG": 85,
+    "Cmb MPG": 2.46
+  },
+  {
+    "Make": "BMW",
+    "Model": "i7 xDrive60 Sedan (21'' Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 85,
+    "Hwy MPG": 89,
+    "Cmb MPG": 2.58
+  },
+  {
+    "Make": "BMW",
+    "Model": "iX M60 (21\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 76,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.28
+  },
+  {
+    "Make": "BMW",
+    "Model": "iX M60 (22\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 77,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "BMW",
+    "Model": "iX xDrive50 (20\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 86,
+    "Hwy MPG": 87,
+    "Cmb MPG": 2.55
+  },
+  {
+    "Make": "BMW",
+    "Model": "iX xDrive50 (21\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 84,
+    "Cmb MPG": 2.46
+  },
+  {
+    "Make": "BMW",
+    "Model": "iX xDrive50 (22'' Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 86,
+    "Hwy MPG": 85,
+    "Cmb MPG": 2.55
+  },
+  {
+    "Make": "CADILLAC",
+    "Model": "Lyriq",
+    "Fuel": "Electricity",
+    "City MPG": 97,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.64
+  },
+  {
+    "Make": "CADILLAC",
+    "Model": "Lyriq",
+    "Fuel": "Electricity",
+    "City MPG": 96,
+    "Hwy MPG": 81,
+    "Cmb MPG": 2.64
+  },
+  {
+    "Make": "CANOO",
+    "Model": "Lifestyle Delivery Vehicle",
+    "Fuel": "Electricity",
+    "City MPG": 93,
+    "Hwy MPG": 77,
+    "Cmb MPG": 2.52
+  },
+  {
+    "Make": "CHEVROLET",
+    "Model": "Bolt EUV",
+    "Fuel": "Electricity",
+    "City MPG": 125,
+    "Hwy MPG": 104,
+    "Cmb MPG": 3.41
+  },
+  {
+    "Make": "CHEVROLET",
+    "Model": "Bolt EV",
+    "Fuel": "Electricity",
+    "City MPG": 131,
+    "Hwy MPG": 109,
+    "Cmb MPG": 3.56
+  },
+  {
+    "Make": "CRUISE",
+    "Model": "AV",
+    "Fuel": "Electricity",
+    "City MPG": 64,
+    "Hwy MPG": 68,
+    "Cmb MPG": 1.96
+  },
+  {
+    "Make": "FARADAY",
+    "Model": "FUTURE FF 91",
+    "Fuel": "Electricity",
+    "City MPG": 73,
+    "Hwy MPG": 68,
+    "Cmb MPG": 2.11
+  },
+  {
+    "Make": "FISKER",
+    "Model": "Ocean Extreme/One 20in",
+    "Fuel": "Electricity",
+    "City MPG": 99,
+    "Hwy MPG": 84,
+    "Cmb MPG": 2.73
+  },
+  {
+    "Make": "FISKER",
+    "Model": "Ocean Sport 20in",
+    "Fuel": "Electricity",
+    "City MPG": 104,
+    "Hwy MPG": 81,
+    "Cmb MPG": 2.73
+  },
+  {
+    "Make": "FISKER",
+    "Model": "Ocean Sport 22in",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 75,
+    "Cmb MPG": 2.34
+  },
+  {
+    "Make": "FISKER",
+    "Model": "Ocean Ultra 20in",
+    "Fuel": "Electricity",
+    "City MPG": 96,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.64
+  },
+  {
+    "Make": "FORD",
+    "Model": "F150 Lightning",
+    "Fuel": "Electricity",
+    "City MPG": 76,
+    "Hwy MPG": 61,
+    "Cmb MPG": 2.02
+  },
+  {
+    "Make": "FORD",
+    "Model": "F150 Lightning Extended Range",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 63,
+    "Cmb MPG": 2.08
+  },
+  {
+    "Make": "FORD",
+    "Model": "F150 Lightning Platinum",
+    "Fuel": "Electricity",
+    "City MPG": 73,
+    "Hwy MPG": 60,
+    "Cmb MPG": 1.96
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E",
+    "Fuel": "Electricity",
+    "City MPG": 110,
+    "Hwy MPG": 96,
+    "Cmb MPG": 3.06
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E",
+    "Fuel": "Electricity",
+    "City MPG": 99,
+    "Hwy MPG": 86,
+    "Cmb MPG": 2.76
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E Cal Route 1 ER",
+    "Fuel": "Electricity",
+    "City MPG": 105,
+    "Hwy MPG": 91,
+    "Cmb MPG": 2.91
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E Extended",
+    "Fuel": "Electricity",
+    "City MPG": 97,
+    "Hwy MPG": 85,
+    "Cmb MPG": 2.73
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E Extended",
+    "Fuel": "Electricity",
+    "City MPG": 105,
+    "Hwy MPG": 92,
+    "Cmb MPG": 2.94
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E GT",
+    "Fuel": "Electricity",
+    "City MPG": 90,
+    "Hwy MPG": 77,
+    "Cmb MPG": 2.49
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E GT Performance",
+    "Fuel": "Electricity",
+    "City MPG": 90,
+    "Hwy MPG": 77,
+    "Cmb MPG": 2.43
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E LFP",
+    "Fuel": "Electricity",
+    "City MPG": 107,
+    "Hwy MPG": 95,
+    "Cmb MPG": 3
+  },
+  {
+    "Make": "FORD",
+    "Model": "Mustang Mach-E LFP",
+    "Fuel": "Electricity",
+    "City MPG": 98,
+    "Hwy MPG": 87,
+    "Cmb MPG": 2.76
+  },
+  {
+    "Make": "FORD",
+    "Model": "Escape HEV",
+    "Fuel": "Gasoline",
+    "City MPG": 42,
+    "Hwy MPG": 36,
+    "Cmb MPG": 39
+  },
+  {
+    "Make": "FORD",
+    "Model": "Escape HEV",
+    "Fuel": "Gasoline",
+    "City MPG": 42,
+    "Hwy MPG": 36,
+    "Cmb MPG": 39
+  },
+  {
+    "Make": "FORD",
+    "Model": "Maverick HEV",
+    "Fuel": "Gasoline",
+    "City MPG": 40,
+    "Hwy MPG": 33,
+    "Cmb MPG": 37
+  },
+  {
+    "Make": "GENESIS",
+    "Model": "Electrified G80",
+    "Fuel": "Electricity",
+    "City MPG": 105,
+    "Hwy MPG": 89,
+    "Cmb MPG": 2.88
+  },
+  {
+    "Make": "GENESIS",
+    "Model": "Electrified GV70",
+    "Fuel": "Electricity",
+    "City MPG": 98,
+    "Hwy MPG": 83,
+    "Cmb MPG": 2.7
+  },
+  {
+    "Make": "GENESIS",
+    "Model": "GV60 Advanced 19inch",
+    "Fuel": "Electricity",
+    "City MPG": 110,
+    "Hwy MPG": 90,
+    "Cmb MPG": 2.97
+  },
+  {
+    "Make": "GENESIS",
+    "Model": "GV60 Advanced 20inch",
+    "Fuel": "Electricity",
+    "City MPG": 103,
+    "Hwy MPG": 86,
+    "Cmb MPG": 2.82
+  },
+  {
+    "Make": "GENESIS",
+    "Model": "GV60 Performance",
+    "Fuel": "Electricity",
+    "City MPG": 97,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.67
+  },
+  {
+    "Make": "GENESIS",
+    "Model": "GV60 Standard",
+    "Fuel": "Electricity",
+    "City MPG": 125,
+    "Hwy MPG": 100,
+    "Cmb MPG": 3.32
+  },
+  {
+    "Make": "HONDA",
+    "Model": "Accord",
+    "Fuel": "Gasoline",
+    "City MPG": 51,
+    "Hwy MPG": 44,
+    "Cmb MPG": 48
+  },
+  {
+    "Make": "HONDA",
+    "Model": "Accord Sport/Touring",
+    "Fuel": "Gasoline",
+    "City MPG": 46,
+    "Hwy MPG": 41,
+    "Cmb MPG": 44
+  },
+  {
+    "Make": "HONDA",
+    "Model": "Civic 4Dr",
+    "Fuel": "Gasoline",
+    "City MPG": 31,
+    "Hwy MPG": 38,
+    "Cmb MPG": 34
+  },
+  {
+    "Make": "HONDA",
+    "Model": "Civic 4Dr",
+    "Fuel": "Gasoline",
+    "City MPG": 31,
+    "Hwy MPG": 40,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "HONDA",
+    "Model": "Civic 4Dr",
+    "Fuel": "Gasoline",
+    "City MPG": 33,
+    "Hwy MPG": 42,
+    "Cmb MPG": 36
+  },
+  {
+    "Make": "HONDA",
+    "Model": "Civic 5Dr",
+    "Fuel": "Gasoline",
+    "City MPG": 31,
+    "Hwy MPG": 39,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "HONDA",
+    "Model": "CR-V",
+    "Fuel": "Gasoline",
+    "City MPG": 40,
+    "Hwy MPG": 34,
+    "Cmb MPG": 37
+  },
+  {
+    "Make": "HONDA",
+    "Model": "CR-V",
+    "Fuel": "Gasoline",
+    "City MPG": 43,
+    "Hwy MPG": 36,
+    "Cmb MPG": 40
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 5",
+    "Fuel": "Electricity",
+    "City MPG": 113,
+    "Hwy MPG": 90,
+    "Cmb MPG": 3
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 5",
+    "Fuel": "Electricity",
+    "City MPG": 127,
+    "Hwy MPG": 94,
+    "Cmb MPG": 3.26
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 5",
+    "Fuel": "Electricity",
+    "City MPG": 132,
+    "Hwy MPG": 98,
+    "Cmb MPG": 3.38
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 6 Long range AWD (18\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 130,
+    "Hwy MPG": 111,
+    "Cmb MPG": 3.59
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 6 Long range AWD (20\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 111,
+    "Hwy MPG": 94,
+    "Cmb MPG": 3.06
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 6 Long range RWD (18\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 153,
+    "Hwy MPG": 127,
+    "Cmb MPG": 4.15
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 6 Long range RWD (20\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 129,
+    "Hwy MPG": 105,
+    "Cmb MPG": 3.47
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Ioniq 6 Standard Range RWD",
+    "Fuel": "Electricity",
+    "City MPG": 151,
+    "Hwy MPG": 120,
+    "Cmb MPG": 4.01
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Kona Electric",
+    "Fuel": "Electricity",
+    "City MPG": 134,
+    "Hwy MPG": 106,
+    "Cmb MPG": 3.56
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Elantra",
+    "Fuel": "Gasoline",
+    "City MPG": 30,
+    "Hwy MPG": 40,
+    "Cmb MPG": 34
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Elantra",
+    "Fuel": "Gasoline",
+    "City MPG": 33,
+    "Hwy MPG": 42,
+    "Cmb MPG": 37
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Elantra Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 49,
+    "Hwy MPG": 52,
+    "Cmb MPG": 50
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Elantra Hybrid Blue",
+    "Fuel": "Gasoline",
+    "City MPG": 53,
+    "Hwy MPG": 56,
+    "Cmb MPG": 54
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Santa Fe Hybrid Blue",
+    "Fuel": "Gasoline",
+    "City MPG": 36,
+    "Hwy MPG": 31,
+    "Cmb MPG": 34
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Sonata Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 45,
+    "Hwy MPG": 51,
+    "Cmb MPG": 47
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Sonata Hybrid Blue",
+    "Fuel": "Gasoline",
+    "City MPG": 50,
+    "Hwy MPG": 54,
+    "Cmb MPG": 52
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Tuscon Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 37,
+    "Hwy MPG": 36,
+    "Cmb MPG": 37
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "Tuscon Hybrid Blue",
+    "Fuel": "Gasoline",
+    "City MPG": 38,
+    "Hwy MPG": 38,
+    "Cmb MPG": 38
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "NEXO",
+    "Fuel": "Hydrogen",
+    "City MPG": 59,
+    "Hwy MPG": 54,
+    "Cmb MPG": 57
+  },
+  {
+    "Make": "HYUNDAI",
+    "Model": "NEXO Blue",
+    "Fuel": "Hydrogen",
+    "City MPG": 65,
+    "Hwy MPG": 58,
+    "Cmb MPG": 61
+  },
+  {
+    "Make": "JAGUAR",
+    "Model": "I-PACE EV400 (20 inch tires)",
+    "Fuel": "Electricity",
+    "City MPG": 89,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.52
+  },
+  {
+    "Make": "JAGUAR",
+    "Model": "I-PACE EV400 (22 inch tire)",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 72,
+    "Cmb MPG": 2.26
+  },
+  {
+    "Make": "KIA",
+    "Model": "EV6 GT",
+    "Fuel": "Electricity",
+    "City MPG": 85,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.34
+  },
+  {
+    "Make": "KIA",
+    "Model": "EV6 Long Range",
+    "Fuel": "Electricity",
+    "City MPG": 134,
+    "Hwy MPG": 101,
+    "Cmb MPG": 3.47
+  },
+  {
+    "Make": "KIA",
+    "Model": "EV6 Long Range AWD (19inch tire)",
+    "Fuel": "Electricity",
+    "City MPG": 120,
+    "Hwy MPG": 98,
+    "Cmb MPG": 3.23
+  },
+  {
+    "Make": "KIA",
+    "Model": "EV6 Long Range AWD (20inch tire)",
+    "Fuel": "Electricity",
+    "City MPG": 106,
+    "Hwy MPG": 86,
+    "Cmb MPG": 2.85
+  },
+  {
+    "Make": "KIA",
+    "Model": "EV6 Standard Range",
+    "Fuel": "Electricity",
+    "City MPG": 136,
+    "Hwy MPG": 100,
+    "Cmb MPG": 3.47
+  },
+  {
+    "Make": "KIA",
+    "Model": "Niro Electric",
+    "Fuel": "Electricity",
+    "City MPG": 126,
+    "Hwy MPG": 101,
+    "Cmb MPG": 3.35
+  },
+  {
+    "Make": "KIA",
+    "Model": "Forte FE",
+    "Fuel": "Gasoline",
+    "City MPG": 30,
+    "Hwy MPG": 41,
+    "Cmb MPG": 34
+  },
+  {
+    "Make": "KIA",
+    "Model": "Niro",
+    "Fuel": "Gasoline",
+    "City MPG": 53,
+    "Hwy MPG": 45,
+    "Cmb MPG": 49
+  },
+  {
+    "Make": "KIA",
+    "Model": "Niro FE",
+    "Fuel": "Gasoline",
+    "City MPG": 53,
+    "Hwy MPG": 54,
+    "Cmb MPG": 53
+  },
+  {
+    "Make": "KIA",
+    "Model": "Sorento Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 36,
+    "Hwy MPG": 33,
+    "Cmb MPG": 34
+  },
+  {
+    "Make": "KIA",
+    "Model": "Sorento Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 39,
+    "Hwy MPG": 35,
+    "Cmb MPG": 37
+  },
+  {
+    "Make": "KIA",
+    "Model": "Sportage Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 38,
+    "Hwy MPG": 38,
+    "Cmb MPG": 38
+  },
+  {
+    "Make": "KIA",
+    "Model": "Sportage Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 42,
+    "Hwy MPG": 44,
+    "Cmb MPG": 43
+  },
+  {
+    "Make": "LEXUS",
+    "Model": "RZ 450e (18\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 115,
+    "Hwy MPG": 98,
+    "Cmb MPG": 3.18
+  },
+  {
+    "Make": "LEXUS",
+    "Model": "RZ 450e (20\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 102,
+    "Hwy MPG": 87,
+    "Cmb MPG": 2.82
+  },
+  {
+    "Make": "LEXUS",
+    "Model": "ES 300h",
+    "Fuel": "Gasoline",
+    "City MPG": 43,
+    "Hwy MPG": 44,
+    "Cmb MPG": 44
+  },
+  {
+    "Make": "LEXUS",
+    "Model": "NX 350h",
+    "Fuel": "Gasoline",
+    "City MPG": 41,
+    "Hwy MPG": 37,
+    "Cmb MPG": 39
+  },
+  {
+    "Make": "LEXUS",
+    "Model": "RX 350h",
+    "Fuel": "Gasoline",
+    "City MPG": 37,
+    "Hwy MPG": 34,
+    "Cmb MPG": 36
+  },
+  {
+    "Make": "LEXUS",
+    "Model": "UX 250h",
+    "Fuel": "Gasoline",
+    "City MPG": 41,
+    "Hwy MPG": 38,
+    "Cmb MPG": 39
+  },
+  {
+    "Make": "LEXUS",
+    "Model": "UX 250h",
+    "Fuel": "Gasoline",
+    "City MPG": 43,
+    "Hwy MPG": 41,
+    "Cmb MPG": 42
+  },
+  {
+    "Make": "LORDSTOWN",
+    "Model": "Endurance",
+    "Fuel": "Electricity",
+    "City MPG": 49,
+    "Hwy MPG": 46,
+    "Cmb MPG": 1.42
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air G Touring XR AWD w/19\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 130,
+    "Hwy MPG": 132,
+    "Cmb MPG": 3.89
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air G Touring XR AWD w/20\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 121,
+    "Hwy MPG": 122,
+    "Cmb MPG": 3.59
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air G Touring XR AWD w/21\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 121,
+    "Hwy MPG": 122,
+    "Cmb MPG": 3.59
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air GT P AWD w/21\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 110,
+    "Hwy MPG": 111,
+    "Cmb MPG": 3.29
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air Pure AWD w/19\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 141,
+    "Hwy MPG": 140,
+    "Cmb MPG": 4.15
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air Pure AWD w/20\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 121,
+    "Hwy MPG": 120,
+    "Cmb MPG": 3.59
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air Touring AWD w/19\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 141,
+    "Hwy MPG": 140,
+    "Cmb MPG": 4.15
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air Touring AWD w/20\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 121,
+    "Hwy MPG": 120,
+    "Cmb MPG": 3.59
+  },
+  {
+    "Make": "LUCID",
+    "Model": "Air Touring AWD w/21\" wheels",
+    "Fuel": "Electricity",
+    "City MPG": 121,
+    "Hwy MPG": 120,
+    "Cmb MPG": 3.59
+  },
+  {
+    "Make": "MAZDA",
+    "Model": "MX-30",
+    "Fuel": "Electricity",
+    "City MPG": 98,
+    "Hwy MPG": 85,
+    "Cmb MPG": 2.73
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "AMG EQE 4Matic+",
+    "Fuel": "Electricity",
+    "City MPG": 74,
+    "Hwy MPG": 73,
+    "Cmb MPG": 2.2
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "AMG EQS 4Matic+",
+    "Fuel": "Electricity",
+    "City MPG": 74,
+    "Hwy MPG": 77,
+    "Cmb MPG": 2.23
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQB 250+",
+    "Fuel": "Electricity",
+    "City MPG": 113,
+    "Hwy MPG": 97,
+    "Cmb MPG": 3.12
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQB 300 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 102,
+    "Hwy MPG": 96,
+    "Cmb MPG": 2.94
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQB 350 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 98,
+    "Hwy MPG": 95,
+    "Cmb MPG": 2.88
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQE 350 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 79,
+    "Cmb MPG": 2.4
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQE 350 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 86,
+    "Hwy MPG": 86,
+    "Cmb MPG": 2.55
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQE 350+",
+    "Fuel": "Electricity",
+    "City MPG": 94,
+    "Hwy MPG": 87,
+    "Cmb MPG": 2.7
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQE 350+",
+    "Fuel": "Electricity",
+    "City MPG": 98,
+    "Hwy MPG": 94,
+    "Cmb MPG": 2.85
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQE 500 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 83,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.46
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQE 500 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 91,
+    "Hwy MPG": 86,
+    "Cmb MPG": 2.64
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQS 450 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 101,
+    "Hwy MPG": 105,
+    "Cmb MPG": 3.06
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQS 450 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 77,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQS 450+",
+    "Fuel": "Electricity",
+    "City MPG": 87,
+    "Hwy MPG": 83,
+    "Cmb MPG": 2.52
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQS 450+",
+    "Fuel": "Electricity",
+    "City MPG": 97,
+    "Hwy MPG": 97,
+    "Cmb MPG": 2.88
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQS 580 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.28
+  },
+  {
+    "Make": "MERCEDES-BENZ",
+    "Model": "EQS 580 4Matic",
+    "Fuel": "Electricity",
+    "City MPG": 90,
+    "Hwy MPG": 92,
+    "Cmb MPG": 2.7
+  },
+  {
+    "Make": "MINI",
+    "Model": "Cooper SE Hardtop",
+    "Fuel": "Electricity",
+    "City MPG": 119,
+    "Hwy MPG": 100,
+    "Cmb MPG": 3.26
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "ARIYA ENG+/EVO+ e-4ORCE 87kWh",
+    "Fuel": "Electricity",
+    "City MPG": 97,
+    "Hwy MPG": 86,
+    "Cmb MPG": 2.73
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "ARIYA ENGAGE 63kWh",
+    "Fuel": "Electricity",
+    "City MPG": 109,
+    "Hwy MPG": 94,
+    "Cmb MPG": 3
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "ARIYA ENGAGE e-4ORCE 63kWh",
+    "Fuel": "Electricity",
+    "City MPG": 101,
+    "Hwy MPG": 89,
+    "Cmb MPG": 2.82
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "ARIYA EVO+/EMP+/PRM 87kWh",
+    "Fuel": "Electricity",
+    "City MPG": 105,
+    "Hwy MPG": 91,
+    "Cmb MPG": 2.91
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "ARIYA PLAT+ e-4ORCE 87kWh 19",
+    "Fuel": "Electricity",
+    "City MPG": 93,
+    "Hwy MPG": 87,
+    "Cmb MPG": 2.67
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "ARIYA PLAT+ e-4ORCE 87kWh 20",
+    "Fuel": "Electricity",
+    "City MPG": 89,
+    "Hwy MPG": 84,
+    "Cmb MPG": 2.58
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "ARIYA VENTURE+ 87kWh",
+    "Fuel": "Electricity",
+    "City MPG": 111,
+    "Hwy MPG": 95,
+    "Cmb MPG": 3.06
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "Leaf",
+    "Fuel": "Electricity",
+    "City MPG": 123,
+    "Hwy MPG": 99,
+    "Cmb MPG": 3.29
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "Leaf SV",
+    "Fuel": "Electricity",
+    "City MPG": 121,
+    "Hwy MPG": 98,
+    "Cmb MPG": 3.23
+  },
+  {
+    "Make": "NISSAN",
+    "Model": "Versa",
+    "Fuel": "Gasoline",
+    "City MPG": 32,
+    "Hwy MPG": 40,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "POLESTAR",
+    "Model": "2 Dual Motor",
+    "Fuel": "Electricity",
+    "City MPG": 105,
+    "Hwy MPG": 96,
+    "Cmb MPG": 2.97
+  },
+  {
+    "Make": "POLESTAR",
+    "Model": "2 Dual Motor Perf Pack",
+    "Fuel": "Electricity",
+    "City MPG": 105,
+    "Hwy MPG": 96,
+    "Cmb MPG": 2.97
+  },
+  {
+    "Make": "POLESTAR",
+    "Model": "2 Single Motor",
+    "Fuel": "Electricity",
+    "City MPG": 113,
+    "Hwy MPG": 100,
+    "Cmb MPG": 3.18
+  },
+  {
+    "Make": "POLESTAR",
+    "Model": "BST edition",
+    "Fuel": "Electricity",
+    "City MPG": 98,
+    "Hwy MPG": 91,
+    "Cmb MPG": 2.85
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan 4 Cross Turismo",
+    "Fuel": "Electricity",
+    "City MPG": 80,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.37
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan 4S Cross Turismo",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 78,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan 4S Perf Battery Plus",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 81,
+    "Cmb MPG": 2.37
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan 4S Performance Battery",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.43
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan GTS",
+    "Fuel": "Electricity",
+    "City MPG": 83,
+    "Hwy MPG": 82,
+    "Cmb MPG": 2.46
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan GTS Sport Turismo",
+    "Fuel": "Electricity",
+    "City MPG": 80,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.37
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan Perf Battery Plus",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 88,
+    "Cmb MPG": 2.43
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan Performance Battery",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 88,
+    "Cmb MPG": 2.46
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan Turbo",
+    "Fuel": "Electricity",
+    "City MPG": 81,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.4
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan Turbo Cross Turismo",
+    "Fuel": "Electricity",
+    "City MPG": 80,
+    "Hwy MPG": 78,
+    "Cmb MPG": 2.34
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan Turbo S",
+    "Fuel": "Electricity",
+    "City MPG": 76,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.23
+  },
+  {
+    "Make": "PORSCHE",
+    "Model": "Taycan Turbo S Cross Turismo",
+    "Fuel": "Electricity",
+    "City MPG": 76,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.23
+  },
+  {
+    "Make": "RIMAC",
+    "Model": "Nevera, C_Two",
+    "Fuel": "Electricity",
+    "City MPG": 53,
+    "Hwy MPG": 54,
+    "Cmb MPG": 1.57
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 20in",
+    "Fuel": "Electricity",
+    "City MPG": 69,
+    "Hwy MPG": 60,
+    "Cmb MPG": 1.9
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 20in All-Terrain",
+    "Fuel": "Electricity",
+    "City MPG": 65,
+    "Hwy MPG": 60,
+    "Cmb MPG": 1.87
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 20in All-Terrain Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 72,
+    "Hwy MPG": 64,
+    "Cmb MPG": 2.02
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 20in All-Terrain Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 67,
+    "Cmb MPG": 2.17
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 20in All-Terrain Performance Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 72,
+    "Hwy MPG": 64,
+    "Cmb MPG": 2.02
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 20in All-Terrain Performance Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 67,
+    "Cmb MPG": 2.17
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 21in",
+    "Fuel": "Electricity",
+    "City MPG": 75,
+    "Hwy MPG": 66,
+    "Cmb MPG": 2.11
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 21in Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 21in Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 89,
+    "Hwy MPG": 76,
+    "Cmb MPG": 2.43
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 21in Performance Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 21in Performance Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 89,
+    "Hwy MPG": 76,
+    "Cmb MPG": 2.43
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 22in",
+    "Fuel": "Electricity",
+    "City MPG": 73,
+    "Hwy MPG": 63,
+    "Cmb MPG": 2.02
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 22in Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 80,
+    "Hwy MPG": 71,
+    "Cmb MPG": 2.23
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 22in Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 84,
+    "Hwy MPG": 72,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 22in Performance Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 80,
+    "Hwy MPG": 71,
+    "Cmb MPG": 2.23
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1S 22in Performance Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 84,
+    "Hwy MPG": 72,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 20in",
+    "Fuel": "Electricity",
+    "City MPG": 69,
+    "Hwy MPG": 60,
+    "Cmb MPG": 1.9
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 20in All-Terrain",
+    "Fuel": "Electricity",
+    "City MPG": 65,
+    "Hwy MPG": 60,
+    "Cmb MPG": 1.87
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 20in All-Terrain Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 72,
+    "Hwy MPG": 64,
+    "Cmb MPG": 2.02
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 20in All-Terrain Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 67,
+    "Cmb MPG": 2.17
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 20in All-Terrain Performance Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 72,
+    "Hwy MPG": 64,
+    "Cmb MPG": 2.02
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 20in All-Terrain Performance Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 78,
+    "Hwy MPG": 67,
+    "Cmb MPG": 2.17
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 21in",
+    "Fuel": "Electricity",
+    "City MPG": 76,
+    "Hwy MPG": 69,
+    "Cmb MPG": 2.17
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 21in Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 21in Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 91,
+    "Hwy MPG": 77,
+    "Cmb MPG": 2.49
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 21in Performance Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 82,
+    "Hwy MPG": 74,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 21in Performance Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 91,
+    "Hwy MPG": 77,
+    "Cmb MPG": 2.49
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 22in",
+    "Fuel": "Electricity",
+    "City MPG": 73,
+    "Hwy MPG": 63,
+    "Cmb MPG": 2.02
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 22in Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 80,
+    "Hwy MPG": 71,
+    "Cmb MPG": 2.26
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 22in Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 84,
+    "Hwy MPG": 72,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 22in Performance Dual Large",
+    "Fuel": "Electricity",
+    "City MPG": 80,
+    "Hwy MPG": 71,
+    "Cmb MPG": 2.26
+  },
+  {
+    "Make": "RIVIAN",
+    "Model": "R1T 22in Performance Dual Max",
+    "Fuel": "Electricity",
+    "City MPG": 84,
+    "Hwy MPG": 72,
+    "Cmb MPG": 2.31
+  },
+  {
+    "Make": "SUBARU",
+    "Model": "Solterra",
+    "Fuel": "Electricity",
+    "City MPG": 114,
+    "Hwy MPG": 94,
+    "Cmb MPG": 3.09
+  },
+  {
+    "Make": "SUBARU",
+    "Model": "Solterra Limited / Touring",
+    "Fuel": "Electricity",
+    "City MPG": 111,
+    "Hwy MPG": 93,
+    "Cmb MPG": 3.03
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model 3",
+    "Fuel": "Electricity",
+    "City MPG": 138,
+    "Hwy MPG": 126,
+    "Cmb MPG": 3.92
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model 3 Long Range",
+    "Fuel": "Electricity",
+    "City MPG": 131,
+    "Hwy MPG": 121,
+    "Cmb MPG": 3.74
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model 3 Performance",
+    "Fuel": "Electricity",
+    "City MPG": 118,
+    "Hwy MPG": 107,
+    "Cmb MPG": 3.35
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model S",
+    "Fuel": "Electricity",
+    "City MPG": 124,
+    "Hwy MPG": 115,
+    "Cmb MPG": 3.56
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model X",
+    "Fuel": "Electricity",
+    "City MPG": 107,
+    "Hwy MPG": 97,
+    "Cmb MPG": 3.03
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model X Plaid (20\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 103,
+    "Hwy MPG": 93,
+    "Cmb MPG": 2.91
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model X Plaid (22\" Wheels)",
+    "Fuel": "Electricity",
+    "City MPG": 94,
+    "Hwy MPG": 88,
+    "Cmb MPG": 2.7
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model Y",
+    "Fuel": "Electricity",
+    "City MPG": 127,
+    "Hwy MPG": 113,
+    "Cmb MPG": 3.56
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model Y",
+    "Fuel": "Electricity",
+    "City MPG": 129,
+    "Hwy MPG": 116,
+    "Cmb MPG": 3.65
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model Y Long Range",
+    "Fuel": "Electricity",
+    "City MPG": 127,
+    "Hwy MPG": 117,
+    "Cmb MPG": 3.62
+  },
+  {
+    "Make": "TESLA",
+    "Model": "Model Y Performance",
+    "Fuel": "Electricity",
+    "City MPG": 115,
+    "Hwy MPG": 106,
+    "Cmb MPG": 3.29
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "bZ4X",
+    "Fuel": "Electricity",
+    "City MPG": 114,
+    "Hwy MPG": 94,
+    "Cmb MPG": 3.09
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "bZ4X",
+    "Fuel": "Electricity",
+    "City MPG": 131,
+    "Hwy MPG": 107,
+    "Cmb MPG": 3.53
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "bZ4X Limited",
+    "Fuel": "Electricity",
+    "City MPG": 112,
+    "Hwy MPG": 92,
+    "Cmb MPG": 3.03
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "bZ4X Limited",
+    "Fuel": "Electricity",
+    "City MPG": 125,
+    "Hwy MPG": 103,
+    "Cmb MPG": 3.38
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Camry Hybrid LE",
+    "Fuel": "Gasoline",
+    "City MPG": 51,
+    "Hwy MPG": 53,
+    "Cmb MPG": 52
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Camry Hybrid SE/XLE/XSE",
+    "Fuel": "Gasoline",
+    "City MPG": 44,
+    "Hwy MPG": 47,
+    "Cmb MPG": 46
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla",
+    "Fuel": "Gasoline",
+    "City MPG": 31,
+    "Hwy MPG": 40,
+    "Cmb MPG": 34
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla",
+    "Fuel": "Gasoline",
+    "City MPG": 32,
+    "Hwy MPG": 41,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla Cross Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 45,
+    "Hwy MPG": 38,
+    "Cmb MPG": 42
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla Hatchback",
+    "Fuel": "Gasoline",
+    "City MPG": 32,
+    "Hwy MPG": 41,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 47,
+    "Hwy MPG": 41,
+    "Cmb MPG": 44
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 50,
+    "Hwy MPG": 43,
+    "Cmb MPG": 47
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 51,
+    "Hwy MPG": 44,
+    "Cmb MPG": 48
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Corolla Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 53,
+    "Hwy MPG": 46,
+    "Cmb MPG": 50
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Highlander Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 35,
+    "Hwy MPG": 35,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Highlander Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 36,
+    "Hwy MPG": 35,
+    "Cmb MPG": 36
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Highlander Hybrid LTD/PLAT",
+    "Fuel": "Gasoline",
+    "City MPG": 35,
+    "Hwy MPG": 34,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Prius",
+    "Fuel": "Gasoline",
+    "City MPG": 53,
+    "Hwy MPG": 54,
+    "Cmb MPG": 54
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Prius",
+    "Fuel": "Gasoline",
+    "City MPG": 57,
+    "Hwy MPG": 56,
+    "Cmb MPG": 57
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Prius XLE/LTD",
+    "Fuel": "Gasoline",
+    "City MPG": 49,
+    "Hwy MPG": 50,
+    "Cmb MPG": 49
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Prius XLE/LTD",
+    "Fuel": "Gasoline",
+    "City MPG": 52,
+    "Hwy MPG": 52,
+    "Cmb MPG": 52
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "RAV4 Hybrid",
+    "Fuel": "Gasoline",
+    "City MPG": 41,
+    "Hwy MPG": 38,
+    "Cmb MPG": 40
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "RAV4 Hybrid Woodland Edition",
+    "Fuel": "Gasoline",
+    "City MPG": 38,
+    "Hwy MPG": 35,
+    "Cmb MPG": 37
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Sienna",
+    "Fuel": "Gasoline",
+    "City MPG": 35,
+    "Hwy MPG": 36,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Sienna",
+    "Fuel": "Gasoline",
+    "City MPG": 36,
+    "Hwy MPG": 36,
+    "Cmb MPG": 36
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Toyota Crown",
+    "Fuel": "Gasoline",
+    "City MPG": 42,
+    "Hwy MPG": 41,
+    "Cmb MPG": 41
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Venza",
+    "Fuel": "Gasoline",
+    "City MPG": 40,
+    "Hwy MPG": 37,
+    "Cmb MPG": 39
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Mirai LE",
+    "Fuel": "Hydrogen",
+    "City MPG": 76,
+    "Hwy MPG": 71,
+    "Cmb MPG": 74
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Mirai Limited",
+    "Fuel": "Hydrogen",
+    "City MPG": 67,
+    "Hwy MPG": 64,
+    "Cmb MPG": 65
+  },
+  {
+    "Make": "TOYOTA",
+    "Model": "Mirai XLE",
+    "Fuel": "Hydrogen",
+    "City MPG": 76,
+    "Hwy MPG": 71,
+    "Cmb MPG": 74
+  },
+  {
+    "Make": "VINFAST",
+    "Model": "VF 8 Eco",
+    "Fuel": "Electricity",
+    "City MPG": 79,
+    "Hwy MPG": 71,
+    "Cmb MPG": 2.23
+  },
+  {
+    "Make": "VINFAST",
+    "Model": "VF 8 Eco City Edition",
+    "Fuel": "Electricity",
+    "City MPG": 71,
+    "Hwy MPG": 67,
+    "Cmb MPG": 2.05
+  },
+  {
+    "Make": "VINFAST",
+    "Model": "VF 8 Plus",
+    "Fuel": "Electricity",
+    "City MPG": 48,
+    "Hwy MPG": 43,
+    "Cmb MPG": 1.36
+  },
+  {
+    "Make": "VINFAST",
+    "Model": "VF 8 Plus City Edition",
+    "Fuel": "Electricity",
+    "City MPG": 65,
+    "Hwy MPG": 61,
+    "Cmb MPG": 1.87
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "ID.4",
+    "Fuel": "Electricity",
+    "City MPG": 115,
+    "Hwy MPG": 99,
+    "Cmb MPG": 3.18
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "ID.4 AWD Pro",
+    "Fuel": "Electricity",
+    "City MPG": 104,
+    "Hwy MPG": 93,
+    "Cmb MPG": 2.94
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "ID.4 AWD Pro S",
+    "Fuel": "Electricity",
+    "City MPG": 104,
+    "Hwy MPG": 93,
+    "Cmb MPG": 2.94
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "ID.4 Pro",
+    "Fuel": "Electricity",
+    "City MPG": 115,
+    "Hwy MPG": 98,
+    "Cmb MPG": 3.18
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "ID.4 Pro S",
+    "Fuel": "Electricity",
+    "City MPG": 115,
+    "Hwy MPG": 98,
+    "Cmb MPG": 3.18
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "ID.4 S",
+    "Fuel": "Electricity",
+    "City MPG": 115,
+    "Hwy MPG": 99,
+    "Cmb MPG": 3.18
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "Jetta",
+    "Fuel": "Gasoline",
+    "City MPG": 29,
+    "Hwy MPG": 42,
+    "Cmb MPG": 34
+  },
+  {
+    "Make": "VOLKSWAGEN",
+    "Model": "Jetta",
+    "Fuel": "Gasoline",
+    "City MPG": 31,
+    "Hwy MPG": 41,
+    "Cmb MPG": 35
+  },
+  {
+    "Make": "VOLVO",
+    "Model": "C40 Recharge twin",
+    "Fuel": "Electricity",
+    "City MPG": 94,
+    "Hwy MPG": 80,
+    "Cmb MPG": 2.58
+  },
+  {
+    "Make": "VOLVO",
+    "Model": "XC40 Recharge twin",
+    "Fuel": "Electricity",
+    "City MPG": 92,
+    "Hwy MPG": 79,
+    "Cmb MPG": 2.52
+  }
+]
