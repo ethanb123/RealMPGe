@@ -35,6 +35,74 @@ document.getElementById('calculate').addEventListener('click', function() {
         data: [vehicle1Efficiency, vehicle2Efficiency]
     }]);
 
+
+
 });
-
-
+    
+const carSelectorModule = (() => {
+    let carData = []; // Store the car data for use in the event listener
+  
+    // Function to fetch the JSON and return a promise with the car data
+    function fetchCars(url) {
+      return fetch(url)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(jsonData => {
+          carData = jsonData.Cars;
+          return carData.map(car => ({
+            make: car.Make,
+            model: car.Model
+          }));
+        });
+    }
+  
+    // Function to fill the dropdown menu with options
+    function fillDropdown(dropdownId, cars) {
+      const dropdown = document.getElementById(dropdownId);
+      cars.forEach(car => {
+        const option = document.createElement('option');
+        option.value = `${car.make} ${car.model}`;
+        option.textContent = option.value;
+        dropdown.appendChild(option);
+      });
+    }
+  
+    // Function to update the efficiency text input based on the selection
+    function updateEfficiencyInput(dropdownId, inputId) {
+      const dropdown = document.getElementById(dropdownId);
+      //const efficiencyinput = document.getElementById(efficiencyinput);
+  
+      dropdown.addEventListener('change', () => {
+        const selectedValue = dropdown.value;
+        const selectedCar = carData.find(car => `${car.Make} ${car.Model}` === selectedValue);
+        console.log("MPG: "+selectedCar['Cmb MPG']);
+        if (selectedCar) {
+            //efficiencyinput.value = selectedCar['Cmb MPG'];
+            document.getElementById('vehicle1Efficiency').value=selectedCar['Cmb MPG']
+        } else {
+            //efficiencyinput.value = ''; // Clear the input if the selection doesn't match
+        }
+      });
+    }
+  
+    // Expose the functions
+    return {
+      fetchCars,
+      fillDropdown,
+      updateEfficiencyInput
+    };
+  })();
+  
+  // Example usage:
+  // Fetch the JSON data from the URL and then fill the dropdown
+  carSelectorModule.fetchCars('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/EPA-Data/2023.json')
+    .then(cars => {
+      carSelectorModule.fillDropdown('car-dropdown', cars);
+      carSelectorModule.updateEfficiencyInput('car-dropdown', 'efficiency-input');
+    })
+    .catch(error => console.error('Failed to fetch cars', error));
+  
