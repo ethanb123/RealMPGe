@@ -102,7 +102,7 @@ document.getElementById('calculate').addEventListener('click', function() {
                 const vehicle = data[selectedYear][selectedMake][selectedModel];
                 
                 efficiencyOutput1.value = vehicle.comb; // Show combined efficiency
-                vehicleTypeOutput1.value = vehicle.fuelType.toLowerCase().includes('electric') ? 'Electric Vehicle' : 'Gas Vehicle';
+                vehicleTypeOutput1.value = vehicle.fuelType.toLowerCase().includes('electric') ? 'electric' : 'gas';
             });
 
             // Vehicle 2
