@@ -35,37 +35,65 @@
         <!-- Vehicle #1 Box -->
         <div class="box" id="vehicle1Box">
             <h2>Vehicle #1</h2>
-            <select id="vehicle1Type">
-                <option value="gas">Gas Vehicle</option>
-                <option value="electric">Electric Vehicle</option>
-            </select>
+            <div class="tab-container">
+                <span class="tab active-tab" onclick="showTab('automatic')">Automatic</span>
+                <span class="tab" onclick="showTab('manual')">Manual</span>
+            </div>
             
-
-            <select id="yearDropdown">
-                <option value="">Select Year</option>
-                <option value="2023">2023</option>
-            </select>
+            <div id="automatic" class="content-box">
+                <select id="year-select1">
+                    <option>Select Year</option>
+                </select>
+                <select id="make-select1">
+                    <option>Select Make</option>
+                </select>
+                <select id="model-select1">
+                    <option>Select Model</option>
+                </select>
+                <label for="vehicle1Efficiency">Efficiency</label>
+                <input type="number" id="vehicle1Efficiency" disabled>
+            </div>
             
-            
-            <select id="car-dropdown">
-                <!-- Dropdown options will be filled here by the JavaScript module -->
-            </select>
-
-            <label for="vehicle1Efficiency">Efficiency</label>
-            <input type="number" id="vehicle1Efficiency" placeholder="MPG or Mi/kWh">
-            
-
+            <div id="manual" class="content-box hidden">
+                <select id="vehicle1Type">
+                    <option value="Gas Vehicle">Gas Vehicle</option>
+                    <option value="Electric Vehicle">Electric Vehicle</option>
+                </select>
+                <input type="text" id="manual-input" placeholder="Input MPG or mi/kWh">
+            </div>
         </div>
         
         <!-- Vehicle #2 Box -->
         <div class="box" id="vehicle2Box">
             <h2>Vehicle #2</h2>
-            <select id="vehicle2Type">
-                <option value="gas">Gas Vehicle</option>
-                <option value="electric">Electric Vehicle</option>
-            </select>
-            <label for="vehicle2Efficiency">Efficiency</label>
-            <input type="number" id="vehicle2Efficiency" placeholder="MPG or Mi/kWh">
+            
+            <div class="tab-container">
+                <span class="tab active-tab" onclick="showTab('automatic')">Automatic</span>
+                <span class="tab" onclick="showTab('manual')">Manual</span>
+            </div>
+            
+            
+            <div id="automatic" class="content-box">
+                <select id="year-select2">
+                    <option>Select Year</option>
+                </select>
+                <select id="make-select2">
+                    <option>Select Make</option>
+                </select>
+                <select id="model-select2">
+                    <option>Select Model</option>
+                </select>
+                <label for="vehicle2Efficiency">Efficiency</label>
+                <input type="number" id="vehicle2Efficiency" >
+            </div>
+            
+            <div id="manual" class="content-box hidden">
+                <select id="vehicle2Type">
+                    <option value="Gas Vehicle">Gas Vehicle</option>
+                    <option value="Electric Vehicle">Electric Vehicle</option>
+                </select>
+                <input type="text" id="manual-input" placeholder="Input MPG or mi/kWh">
+            </div>            
         </div>
         
         <!-- Calculation and Output Section -->
