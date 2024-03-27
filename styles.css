@@ -72,21 +72,6 @@ input, select, button {
     display: block;
 }
 
-button#calculate {
-    background-color: #0072c9;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    grid-area: calculate;
-}
-
-button#calculate:hover {
-    opacity: 0.8;
-}
-
 #output {
     display: flex;
     flex-direction: column;
@@ -107,7 +92,7 @@ button#calculate:hover {
     cursor: pointer;
     padding: 10px;
     border: 1px solid #ccc;
-    display: inline-block;
+    display: inline-block; 
     background-color: #f9f9f9;
     width: 50%;
     text-align: center;

@@ -1,40 +1,3 @@
-document.getElementById('calculate').addEventListener('click', function() {
-    // Input values
-    var gasPrice = parseFloat(document.getElementById('gasPrice').value);
-    var electricPrice = parseFloat(document.getElementById('electricPrice').value);
-
-    // Unused inputs
-    var milesYear = parseFloat(document.getElementById('milesYear').value);
-    var yearsOwnership = parseFloat(document.getElementById('yearsOwnership').value);
-
-    // Calculate MPGe for each vehicle in the array
-    var vehicleEfficiencies = vehicles.map(function(vehicle) {
-        var efficiency = vehicle.efficiency;
-        if (vehicle.type === 'electric') {
-            efficiency = (efficiency / (electricPrice / gasPrice)).toFixed(2);
-        }
-        return efficiency;
-    });
-
-    // Set the colors based on the type of vehicles
-    var vehicleColors = vehicles.map(function(vehicle) {
-        return vehicle.type === 'electric' ? '#72b644' : '#f26937';
-    });
-
-    // Update the chart colors
-    chart.updateOptions({
-        colors: vehicleColors,
-        xaxis: {
-            categories: vehicles.map(vehicle => vehicle.model)
-        }
-    });
-
-    // Update the chart data with the new efficiency values
-    chart.updateSeries([{
-        data: vehicleEfficiencies
-    }]);
-});
-
 var vehicles = [];
 
 document.getElementById('addVehicleButton').addEventListener('click', function() {
@@ -112,6 +75,42 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
             }
         vehicleList.appendChild(listItem);
     });
+
+    // old calculate section
+    // Input values
+    var gasPrice = parseFloat(document.getElementById('gasPrice').value);
+    var electricPrice = parseFloat(document.getElementById('electricPrice').value);
+
+    // Unused inputs
+    var milesYear = parseFloat(document.getElementById('milesYear').value);
+    var yearsOwnership = parseFloat(document.getElementById('yearsOwnership').value);
+
+    // Calculate MPGe for each vehicle in the array
+    var vehicleEfficiencies = vehicles.map(function(vehicle) {
+        var efficiency = vehicle.efficiency;
+        if (vehicle.type === 'electric') {
+            efficiency = (efficiency / (electricPrice / gasPrice)).toFixed(2);
+        }
+        return efficiency;
+    });
+
+    // Set the colors based on the type of vehicles
+    var vehicleColors = vehicles.map(function(vehicle) {
+        return vehicle.type === 'electric' ? '#72b644' : '#f26937';
+    });
+
+    // Update the chart colors
+    chart.updateOptions({
+        colors: vehicleColors,
+        xaxis: {
+            categories: vehicles.map(vehicle => vehicle.model)
+        }
+    });
+
+    // Update the chart data with the new efficiency values
+    chart.updateSeries([{
+        data: vehicleEfficiencies
+    }]);
 });
 
   // Selection Tabs
