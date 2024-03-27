@@ -132,7 +132,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     const efficiencyOutput = document.getElementById('vehicleEfficiency');
     const vehicleType = document.getElementById('vehicleType');
 
-    fetch('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/EPA-Data/Transformed_EPA22-23.json')
+    fetch('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/EPA-Data/cars.json')
         .then(response => response.json())
         .then(data => {
             // Populate year dropdown
