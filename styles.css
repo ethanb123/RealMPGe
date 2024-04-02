@@ -82,6 +82,10 @@ input, select, button {
     width: 100%;
 }
 
+#lineChart {
+    width: 100%;
+}
+
 /* Tab Styles */
 .tab-container {
     width: 100%;

@@ -9,8 +9,6 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     var gasPrice = parseFloat(document.getElementById('gasPrice').value);
     var electricPrice = parseFloat(document.getElementById('electricPrice').value);
 
-    var manualSelected = true;
-
     // If the user has manually input the efficiency and type, use those values
     if (document.getElementById('vehicleEfficiency').value !== '') {
         efficiency = document.getElementById('vehicleEfficiency').value;
@@ -73,19 +71,10 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
                     listItem.textContent = `${index + 1}. Manual Input #${manualVehiclesNumber} - ${vehicle.efficiency} MPG`;
                 }
             }
-        vehicleList.appendChild(listItem);
+        vehicleList.appendChild(listItem);        
     });
 
-    // old calculate section
-    // Input values
-    var gasPrice = parseFloat(document.getElementById('gasPrice').value);
-    var electricPrice = parseFloat(document.getElementById('electricPrice').value);
-
-    // Unused inputs
-    var milesYear = parseFloat(document.getElementById('milesYear').value);
-    var yearsOwnership = parseFloat(document.getElementById('yearsOwnership').value);
-
-    // Calculate MPGe for each vehicle in the array
+    // Calculate EV-MPG for each vehicle in the array
     var vehicleEfficiencies = vehicles.map(function(vehicle) {
         var efficiency = vehicle.efficiency;
         if (vehicle.type === 'electric') {
@@ -98,6 +87,8 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     var vehicleColors = vehicles.map(function(vehicle) {
         return vehicle.type === 'electric' ? '#72b644' : '#f26937';
     });
+
+    updateLineChart();
 
     // Update the chart colors
     chart.updateOptions({
@@ -113,67 +104,138 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     }]);
 });
 
-  // Selection Tabs
-  var activeTab = 'automatic';
-    
-  function showTab(tab) {
-      document.getElementById(activeTab).classList.add('hidden');
-      document.getElementById(tab).classList.remove('hidden');
-      document.querySelector('.active-tab').classList.remove('active-tab');
-      document.querySelector(`.tab[onclick="showTab('${tab}')"]`).classList.add('active-tab');
-      activeTab = tab;
-  }
+// Selection Tabs
+var activeTab = 'automatic';
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const yearSelect = document.getElementById('year-select');
-    const makeSelect = document.getElementById('make-select');
-    const modelSelect = document.getElementById('model-select');
-    const efficiencyOutput = document.getElementById('vehicleEfficiency');
-    const vehicleType = document.getElementById('vehicleType');
+function showTab(tab) {
+    document.getElementById(activeTab).classList.add('hidden');
+    document.getElementById(tab).classList.remove('hidden');
+    document.querySelector('.active-tab').classList.remove('active-tab');
+    document.querySelector(`.tab[onclick="showTab('${tab}')"]`).classList.add('active-tab');
+    activeTab = tab;
+}
 
-    fetch('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/EPA-Data/cars.json')
-        .then(response => response.json())
-        .then(data => {
-            // Populate year dropdown
-            for (const year in data) {
-                let option = new Option(year, year);
-                yearSelect.add(option);
-            }
+document.addEventListener('DOMContentLoaded', function() {
+const yearSelect = document.getElementById('year-select');
+const makeSelect = document.getElementById('make-select');
+const modelSelect = document.getElementById('model-select');
+const efficiencyOutput = document.getElementById('vehicleEfficiency');
+const vehicleType = document.getElementById('vehicleType');
 
-            yearSelect.addEventListener('change', function() {
-                const selectedYear = yearSelect.value;
-                const makes = data[selectedYear];
-                
-                makeSelect.innerHTML = '<option>Select Make</option>'; // Reset make dropdown
-                for (const make in makes) {
-                    let option = new Option(make, make);
-                    makeSelect.add(option);
-                }
-            });
+fetch('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/EPA-Data/cars.json')
+    .then(response => response.json())
+    .then(data => {
+        // Populate year dropdown
+        for (const year in data) {
+            let option = new Option(year, year);
+            yearSelect.add(option);
+        }
 
-            makeSelect.addEventListener('change', function() {
-                const selectedYear = yearSelect.value;
-                const selectedMake = makeSelect.value;
-                const models = data[selectedYear][selectedMake];
-                
-                modelSelect.innerHTML = '<option>Select Model</option>'; // Reset model dropdown
-                for (const model in models) {
-                    let option = new Option(model, model);
-                    modelSelect.add(option);
-                }
-            });
-
-            modelSelect.addEventListener('change', function() {
-                const selectedYear = yearSelect.value;
-                const selectedMake = makeSelect.value;
-                const selectedModel = modelSelect.value;
-                const vehicle = data[selectedYear][selectedMake][selectedModel];
-                
-                efficiencyOutput.value = vehicle.comb; // Show combined efficiency
-                vehicleType.value = vehicle.fuelType.toLowerCase().includes('electric') ? 'electric' : 'gas';
-            });
-
+        yearSelect.addEventListener('change', function() {
+            const selectedYear = yearSelect.value;
+            const makes = data[selectedYear];
             
-          });
+            makeSelect.innerHTML = '<option>Select Make</option>'; // Reset make dropdown
+            for (const make in makes) {
+                let option = new Option(make, make);
+                makeSelect.add(option);
+            }
+        });
+
+        makeSelect.addEventListener('change', function() {
+            const selectedYear = yearSelect.value;
+            const selectedMake = makeSelect.value;
+            const models = data[selectedYear][selectedMake];
+            
+            modelSelect.innerHTML = '<option>Select Model</option>'; // Reset model dropdown
+            for (const model in models) {
+                let option = new Option(model, model);
+                modelSelect.add(option);
+            }
+        });
+
+        modelSelect.addEventListener('change', function() {
+            const selectedYear = yearSelect.value;
+            const selectedMake = makeSelect.value;
+            const selectedModel = modelSelect.value;
+            const vehicle = data[selectedYear][selectedMake][selectedModel];
+            
+            efficiencyOutput.value = vehicle.comb; // Show combined efficiency
+            vehicleType.value = vehicle.fuelType.toLowerCase().includes('electric') ? 'electric' : 'gas';
+        });
+
+    });
 });
+
+var chartLine = null; 
   
+function updateLineChart() {
+    var yearsOwnership = document.getElementById('yearsOwnership').value;
+    var milesYear = document.getElementById('milesYear').value;
+    var gasPrice = document.getElementById('gasPrice').value;
+    var electricPrice = document.getElementById('electricPrice').value;
+
+    var series = vehicles.map(vehicle => {
+        var data = [];
+        for (var year = 1; year <= yearsOwnership; year++) {
+            var cost;
+            if (vehicle.type === 'gas') {
+                cost = (milesYear / vehicle.efficiency) * gasPrice * year;
+            } else {
+                cost = (milesYear / vehicle.efficiency) * electricPrice * year;
+            }
+            data.push(Math.round(cost));
+        }
+        return {
+            name: `${vehicle.make} ${vehicle.model}`,
+            data: data
+        };
+    });
+
+    var options = {
+        chart: {
+            type: 'line'
+        },
+        series: series,
+        xaxis: {
+            title: {
+                text: 'Years',
+                style: {
+                    fontSize: '20px'
+                }
+            },
+            labels: {
+                style: {
+                    fontSize: '20px'
+                }
+            },
+            categories: Array.from({length: yearsOwnership}, (_, i) => i + 1),
+        },
+        yaxis: {
+            title: {
+                text: 'Total Fuel Cost',
+                style: {
+                    fontSize: '20px'
+                }
+            },
+            labels: {
+                
+                style: {
+                    fontSize: '20px'
+                }
+            }
+        },
+        legend: {
+            fontSize: '20px'
+        },
+    };
+
+    if (chartLine) {
+        // If the chart already exists, update the series data
+        chartLine.updateSeries(series);
+    } else {
+        // If the chart doesn't exist yet, create it
+        chartLine = new ApexCharts(document.getElementById('lineChart'), options);
+        chartLine.render();
+    }
+}
