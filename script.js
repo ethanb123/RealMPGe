@@ -9,6 +9,21 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     var gasPrice = parseFloat(document.getElementById('gasPrice').value);
     var electricPrice = parseFloat(document.getElementById('electricPrice').value);
 
+    var milesYear = document.getElementById('milesYear').value;
+    var yearsOwnership = document.getElementById('yearsOwnership').value;
+
+    // Check if any of the fields are empty
+    var missingFields = [];
+    if (!gasPrice) missingFields.push('Gas Price');
+    if (!electricPrice) missingFields.push('Electric Price');
+    if (!milesYear) missingFields.push('Miles per Year');
+    if (!yearsOwnership) missingFields.push('Years of Ownership');
+
+    if (missingFields.length > 0) {
+        alert('Please enter the following fields: \n' + missingFields.join(', '));
+        return;
+    }
+
     // If the user has manually input the efficiency and type, use those values
     if (document.getElementById('vehicleEfficiency').value !== '') {
         efficiency = document.getElementById('vehicleEfficiency').value;
@@ -187,7 +202,7 @@ function updateLineChart() {
             data.push(Math.round(cost));
         }
         return {
-            name: `${vehicle.make} ${vehicle.model}`,
+            name: `${vehicle.model}`,
             data: data
         };
     });
@@ -233,6 +248,7 @@ function updateLineChart() {
     if (chartLine) {
         // If the chart already exists, update the series data
         chartLine.updateSeries(series);
+        chartLine.updateOptions(options)
     } else {
         // If the chart doesn't exist yet, create it
         chartLine = new ApexCharts(document.getElementById('lineChart'), options);
