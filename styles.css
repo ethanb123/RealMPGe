@@ -73,6 +73,18 @@ input, select, button {
     list-style-type: none;
 }
 
+#vehicle2Box {
+    position: relative;
+}
+
+#vehicle2Box button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    background-color: #6587e5;
+}
+
 /* Tab Styles */
 .tab-container {
     width: 100%;

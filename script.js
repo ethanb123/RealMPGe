@@ -90,7 +90,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
                 // If the vehicle is electric, convert the efficiency to ev-mpg
                 if (vehicle.type === 'electric') {
                     evMPG = vehicle.efficiency / (electricPrice / gasPrice);
-                    listItem.textContent = `${index + 1}. ${vehicle.make} ${vehicle.model} - ${evMPG.toFixed(2)} ev-mpg`;
+                    listItem.textContent = `${index + 1}. ${vehicle.make} ${vehicle.model} - ${evMPG.toFixed(2)} EV-MPG`;
                     listItem.style.color = "#00c421";
                 } else {
                     listItem.textContent = `${index + 1}. ${vehicle.make} ${vehicle.model} - ${vehicle.efficiency} MPG`;
