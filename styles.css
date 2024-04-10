@@ -9,19 +9,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas: 
-        "rates usage"
-        "vehicle1 vehicle2"
-        "calculate calculate"
-        "output output";
-}
 
 #topbar {
     margin: auto;
@@ -78,13 +65,7 @@ input, select, button {
     align-items: center;
 }
 
-#chart {
-    width: 100%;
-}
 
-#lineChart {
-    width: 100%;
-}
 
 /* Tab Styles */
 .tab-container {
@@ -115,20 +96,44 @@ input, select, button {
     display: none;
 }
 
-
-@media (max-width: 900px) {
+@media (min-width: 900px) {
     #container {
-        grid-template-columns: 1fr;
+        max-width: 75vw;
+        margin: auto;
+        padding: 20px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-            "rates"
-            "usage"
-            "vehicle1"
-            "vehicle2"
-            "calculate"
-            "output";
+            "rates vehicle-input vehicle-selection"
+            "usage vehicle-input vehicle-selection"
+            "charts charts charts";
     }
 
-    .box {
-        margin-bottom: 20px;
+    #charts {
+        grid-area: charts;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #lineChart, #chart {
+        flex-grow: 1;
+        width: 100%;
+    }
+    
+    #ratesBox {
+        grid-area: rates;
+    }
+
+    #usageBox {
+        grid-area: usage;
+    }
+
+    #vehicleBox {
+        grid-area: vehicle-input;
+    }
+
+    #vehicle2Box {
+        grid-area: vehicle-selection;
     }
 }
