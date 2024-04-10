@@ -113,7 +113,7 @@ const modelSelect = document.getElementById('model-select');
 const efficiencyOutput = document.getElementById('vehicleEfficiency');
 const vehicleType = document.getElementById('vehicleType');
 
-fetch('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/EPA-Data/cars.json')
+fetch('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/Data/cars.json')
     .then(response => response.json())
     .then(data => {
         // Populate year dropdown
