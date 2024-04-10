@@ -12,7 +12,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     var milesYear = document.getElementById('milesYear').value;
     var yearsOwnership = document.getElementById('yearsOwnership').value;
 
-    // Check if any of the fields are empty
+    // Rates and Usage Input Validation
     var missingFields = [];
     if (!gasPrice) missingFields.push('Gas Price');
     if (!electricPrice) missingFields.push('Electric Price');
@@ -22,6 +22,26 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     if (missingFields.length > 0) {
         alert('Please enter the following fields: \n' + missingFields.join(', '));
         return;
+    }
+
+    // Vehicle Input Validation
+    if (activeTab == 'automatic') {
+        var yearSelect = document.getElementById('year-select');
+        var makeSelect = document.getElementById('make-select');
+        var modelSelect = document.getElementById('model-select');
+
+        if (yearSelect.value === 'Select Year' || makeSelect.value === 'Select Make' || modelSelect.value === 'Select Model') {
+            alert('Please fill out all fields in the Automatic tab.');
+            return false;
+        }
+    } else {
+        var vehicleTypeManual = document.getElementById('vehicleTypeManual');
+        var vehicleEfficiencyManual = document.getElementById('vehicleEfficiencyManual');
+
+        if (vehicleTypeManual.value === '' || vehicleEfficiencyManual.value === '') {
+            alert('Please fill out all fields in the Manual tab.');
+            return false;
+        }
     }
 
     // If the user has manually input the efficiency and type, use those values
