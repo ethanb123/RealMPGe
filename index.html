@@ -125,7 +125,7 @@
                         fontSize: '30px'
                     }
                 },
-                colors: ["#304758", "#eb8034"],
+                //colors: ["#304758", "#eb8034"],
                 legend: {
                     show: false
                 }
@@ -134,6 +134,52 @@
             // Use the ApexCharts object to create a new chart
             var chart = new ApexCharts(document.querySelector("#chart"), options);
             chart.render();
+        </script>
+
+        <script>
+            // Define chart options and series
+            var lineOptions = {
+                chart: {
+                    type: 'line'
+                },
+                series: [{
+                    name: 'Vehicle Efficiency',
+                    data: [] // Initialize with no data
+                }],
+                xaxis: {
+                    labels: {
+                        style: {
+                            fontSize: '20px'
+                        }
+                    }
+                },
+                yaxis: {
+                    title: {
+                        text: 'Efficiency (MPG or EV-MPG)',
+                        style: {
+                            fontSize: '20px'
+                        }
+                    },
+                    labels: {
+                        style: {
+                            fontSize: '20px'
+                        }
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        fontSize: '30px'
+                    }
+                },
+                legend: {
+                    show: false
+                }
+            };
+
+            // Initialize the line chart with no data
+            var lineChart = new ApexCharts(document.querySelector("#lineChart"), lineOptions);
+            lineChart.render();
         </script>
 
         <script src="script.js"></script>         

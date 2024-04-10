@@ -89,34 +89,10 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
         vehicleList.appendChild(listItem);        
     });
 
-    // Calculate EV-MPG for each vehicle in the array
-    var vehicleEfficiencies = vehicles.map(function(vehicle) {
-        var efficiency = vehicle.efficiency;
-        if (vehicle.type === 'electric') {
-            efficiency = (efficiency / (electricPrice / gasPrice)).toFixed(2);
-        }
-        return efficiency;
-    });
-
-    // Set the colors based on the type of vehicles
-    var vehicleColors = vehicles.map(function(vehicle) {
-        return vehicle.type === 'electric' ? '#72b644' : '#f26937';
-    });
-
     updateLineChart();
 
-    // Update the chart colors
-    chart.updateOptions({
-        colors: vehicleColors,
-        xaxis: {
-            categories: vehicles.map(vehicle => vehicle.model)
-        }
-    });
+    updateBarChart();
 
-    // Update the chart data with the new efficiency values
-    chart.updateSeries([{
-        data: vehicleEfficiencies
-    }]);
 });
 
 // Selection Tabs
@@ -182,15 +158,13 @@ fetch('https://raw.githubusercontent.com/ethanb123/RealMPGe/main/EPA-Data/cars.j
     });
 });
 
-var chartLine = null; 
-  
 function updateLineChart() {
     var yearsOwnership = document.getElementById('yearsOwnership').value;
     var milesYear = document.getElementById('milesYear').value;
     var gasPrice = document.getElementById('gasPrice').value;
     var electricPrice = document.getElementById('electricPrice').value;
 
-    var series = vehicles.map(vehicle => {
+    var lineSeries = vehicles.map(vehicle => {
         var data = [];
         for (var year = 1; year <= yearsOwnership; year++) {
             var cost;
@@ -207,11 +181,11 @@ function updateLineChart() {
         };
     });
 
-    var options = {
+    var lineOptions = {
         chart: {
             type: 'line'
         },
-        series: series,
+        series: lineSeries,
         xaxis: {
             title: {
                 text: 'Years',
@@ -244,14 +218,35 @@ function updateLineChart() {
             fontSize: '20px'
         },
     };
+    lineChart.updateSeries(lineSeries);
+    lineChart.updateOptions(lineOptions)
+}
 
-    if (chartLine) {
-        // If the chart already exists, update the series data
-        chartLine.updateSeries(series);
-        chartLine.updateOptions(options)
-    } else {
-        // If the chart doesn't exist yet, create it
-        chartLine = new ApexCharts(document.getElementById('lineChart'), options);
-        chartLine.render();
-    }
+function updateBarChart() {
+    // Calculate EV-MPG for each vehicle in the array
+    var vehicleEfficiencies = vehicles.map(function(vehicle) {
+        var efficiency = vehicle.efficiency;
+        if (vehicle.type === 'electric') {
+            efficiency = (efficiency / (electricPrice / gasPrice)).toFixed(2);
+        }
+        return efficiency;
+    });
+
+    // Set the colors based on the type of vehicles
+    var vehicleColors = vehicles.map(function(vehicle) {
+        return vehicle.type === 'electric' ? '#72b644' : '#f26937';
+    });
+
+    // Update the chart colors
+    chart.updateOptions({
+        //colors: vehicleColors,
+        xaxis: {
+            categories: vehicles.map(vehicle => vehicle.model)
+        }
+    });
+
+    // Update the chart data with the new efficiency values
+    chart.updateSeries([{
+        data: vehicleEfficiencies
+    }]);
 }
