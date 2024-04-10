@@ -91,6 +91,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
                 if (vehicle.type === 'electric') {
                     evMPG = vehicle.efficiency / (electricPrice / gasPrice);
                     listItem.textContent = `${index + 1}. ${vehicle.make} ${vehicle.model} - ${evMPG.toFixed(2)} ev-mpg`;
+                    listItem.style.color = "#00c421";
                 } else {
                     listItem.textContent = `${index + 1}. ${vehicle.make} ${vehicle.model} - ${vehicle.efficiency} MPG`;
                 }
@@ -106,7 +107,8 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
                     listItem.textContent = `${index + 1}. Manual Input #${manualVehiclesNumber} - ${vehicle.efficiency} MPG`;
                 }
             }
-        vehicleList.appendChild(listItem);        
+        vehicleList.appendChild(listItem);   
+        
     });
 
     updateLineChart();
@@ -243,6 +245,9 @@ function updateLineChart() {
 }
 
 function updateBarChart() {
+    var gasPrice = parseFloat(document.getElementById('gasPrice').value);
+    var electricPrice = parseFloat(document.getElementById('electricPrice').value);
+
     // Calculate EV-MPG for each vehicle in the array
     var vehicleEfficiencies = vehicles.map(function(vehicle) {
         var efficiency = vehicle.efficiency;
