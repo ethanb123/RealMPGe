@@ -198,14 +198,15 @@ function updateLineChart() {
             data.push(Math.round(cost));
         }
         return {
-            name: `${vehicle.model}`,
+            name: `${vehicle.model.split(' ').slice(0,2).join(' ')}`,
             data: data
         };
     });
 
     var lineOptions = {
         chart: {
-            type: 'line'
+            type: 'line',
+            height: '510px'
         },
         series: lineSeries,
         xaxis: {
@@ -213,7 +214,8 @@ function updateLineChart() {
                 text: 'Years',
                 style: {
                     fontSize: '20px'
-                }
+                },
+                offsetY: -40,
             },
             labels: {
                 style: {
@@ -266,7 +268,7 @@ function updateBarChart() {
     chart.updateOptions({
         //colors: vehicleColors,
         xaxis: {
-            categories: vehicles.map(vehicle => vehicle.model)
+            categories: vehicles.map(vehicle => vehicle.model.split(' ').slice(0,2).join(' '))
         }
     });
 
