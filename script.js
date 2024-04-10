@@ -219,7 +219,7 @@ function updateLineChart() {
             },
             labels: {
                 style: {
-                    fontSize: '20px'
+                    fontSize: '20px',
                 }
             },
             categories: Array.from({length: yearsOwnership}, (_, i) => i + 1),
@@ -232,7 +232,6 @@ function updateLineChart() {
                 }
             },
             labels: {
-                
                 style: {
                     fontSize: '20px'
                 }
@@ -261,14 +260,19 @@ function updateBarChart() {
 
     // Set the colors based on the type of vehicles
     var vehicleColors = vehicles.map(function(vehicle) {
-        return vehicle.type === 'electric' ? '#72b644' : '#f26937';
+        return vehicle.type === 'electric' ? '#72b644' : '#000000';
     });
 
     // Update the chart colors
     chart.updateOptions({
         //colors: vehicleColors,
         xaxis: {
-            categories: vehicles.map(vehicle => vehicle.model.split(' ').slice(0,2).join(' '))
+            categories: vehicles.map(vehicle => vehicle.model.split(' ').slice(0,2).join(' ')),
+            labels: {
+                style: {
+                    colors: vehicleColors
+                }
+            }            
         }
     });
 
