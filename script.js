@@ -86,7 +86,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     vehicles.forEach((vehicle, index) => {
         var listItem = document.createElement('li');
             // If Automatic Input is used, label the make and model
-            if (vehicle.year !== "Select Year") {
+            if (vehicle.year !== "Vehicle Year") {
                 // If the vehicle is electric, convert the efficiency to ev-mpg
                 if (vehicle.type === 'electric') {
                     evMPG = vehicle.efficiency / (electricPrice / gasPrice);
@@ -101,8 +101,10 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
                 // Set the Model name for the charts label
                 vehicle.model = `Manual Input #${manualVehiclesNumber}`;
                 if (vehicle.type === 'electric') {
+                    console.log("MANUAL MODE SELECTED")
                     evMPG = vehicle.efficiency / (electricPrice / gasPrice);
                     listItem.textContent = `${index + 1}. Manual Input #${manualVehiclesNumber} - ${evMPG.toFixed(2)} ev-mpg`;
+                    listItem.style.color = "#00c421";
                 } else {
                     listItem.textContent = `${index + 1}. Manual Input #${manualVehiclesNumber} - ${vehicle.efficiency} MPG`;
                 }
