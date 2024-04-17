@@ -12,7 +12,7 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     var milesYear = document.getElementById('milesYear').value;
     var yearsOwnership = document.getElementById('yearsOwnership').value;
 
-    // Rates and Usage Input Validation
+    // Rates and Usage Input Validation (exists)
     var missingFields = [];
     if (!gasPrice) missingFields.push('Gas Price');
     if (!electricPrice) missingFields.push('Electric Price');
@@ -21,6 +21,18 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
 
     if (missingFields.length > 0) {
         alert('Please enter the following fields: \n' + missingFields.join(', '));
+        return;
+    }
+
+    // Rates and Usage Input Validation (Non-Negative)
+    var invalidFields = [];
+    if (gasPrice <= 0) invalidFields.push('Gas Price');
+    if (electricPrice <= 0) invalidFields.push('Electric Price');
+    if (milesYear <= 0) invalidFields.push('Miles per Year');
+    if (yearsOwnership <= 0) invalidFields.push('Years of Ownership');
+
+    if (invalidFields.length > 0) {
+        alert('The following fields must be greater than zero: \n' + invalidFields.join(', '));
         return;
     }
 
