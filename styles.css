@@ -132,7 +132,7 @@ input, select, button {
     display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     #container {
         max-width: 75vw;
         margin: auto;
