@@ -14,6 +14,10 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 5vh;
+    background-color: #269ffb;
+    border-radius: 8px;
+    width: 73%;
+    margin-top: 15px;
 }
 
 .box {

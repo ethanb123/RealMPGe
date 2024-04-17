@@ -9,9 +9,13 @@
 </head>
 <body>
     <div id="topbar" style="display: flex; justify-content: center; align-items: center;">
-        <img src="https://github.com/ethanb123/ev-mpg/blob/main/Data/Main-Logo.png?raw=true" id='logo'>
-        <h1 style="font-size: 6vh">EV-MPG</h1>
+        <img style='margin-bottom: 20px; margin-top: -40px; width: 150px; height: 150px' src="https://github.com/ethanb123/ev-mpg/blob/main/Data/Main-Logo.png?raw=true" id='logo'>
+        <h1 style="font-size: 6vh; margin-bottom: 4vh">EV-MPG</h1>
+        <p style='font-size: 1.5rem; width: 35%; margin-left: 30px; margin-bottom: 4vh'>EV-MPG is a web application that 
+            helps you compare the long-term costs of gasoline and electric vehicles.
+       </p>
     </div>
+
 
     <div id="container">
         
@@ -114,6 +118,14 @@
                 chart: {
                     type: 'bar'
                 },
+                title: {
+                    text: 'Fuel Efficiency Comparison',
+                    align: 'center',
+                    style: {
+                      fontSize:  '40px',
+                      fontWeight:  'bold',
+                    },
+                },
                 series: [{
                     name: 'Vehicle Efficiency',
                     data: [0, 0] // Initialize with no data
@@ -165,6 +177,15 @@
                     name: 'Vehicle Efficiency',
                     data: [] // Initialize with no data
                 }],
+                title: {
+                    text: 'Cumulative Fuel Cost Over Time',
+                    align: 'center',
+                    style: {
+                      
+                      fontSize:  '40px',
+                      fontWeight:  'bold',
+                    },
+                },
                 xaxis: {
                     labels: {
                         style: {
@@ -176,7 +197,7 @@
                     title: {
                         text: 'Efficiency (MPG or EV-MPG)',
                         style: {
-                            fontSize: '20px'
+                            fontSize: '1.5rem'
                         }
                     },
                     labels: {
