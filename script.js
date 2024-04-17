@@ -71,9 +71,9 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
     vehicles.push(vehicle);
 
     // Clear the input fields
-    document.getElementById('year-select').value = 'Select Year';
-    document.getElementById('make-select').value = 'Select Make';
-    document.getElementById('model-select').value = 'Select Model';
+    document.getElementById('year-select').value = 'Vehicle Year';
+    document.getElementById('make-select').value = 'Vehicle Make';
+    document.getElementById('model-select').value = 'Vehicle Model';
     document.getElementById('vehicleEfficiency').value = '';
     document.getElementById('vehicleType').value = '';
     document.getElementById('vehicleTypeManual').value = '';
@@ -107,7 +107,17 @@ document.getElementById('addVehicleButton').addEventListener('click', function()
                     listItem.textContent = `${index + 1}. Manual Input #${manualVehiclesNumber} - ${vehicle.efficiency} MPG`;
                 }
             }
-        vehicleList.appendChild(listItem);   
+
+        // Non-working remove button...
+        var removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.onclick = function() {
+            listItem.remove();
+        };
+    
+        listItem.appendChild(removeButton);
+    
+        vehicleList.appendChild(listItem);
         
     });
 
@@ -266,6 +276,11 @@ function updateBarChart() {
     // Update the chart colors
     chart.updateOptions({
         //colors: vehicleColors,
+        
+        chart: {
+            type: 'bar',
+            height: '480px'
+        },
         xaxis: {
             categories: vehicles.map(vehicle => vehicle.model.split(' ').slice(0,2).join(' ')),
             labels: {
@@ -281,3 +296,14 @@ function updateBarChart() {
         data: vehicleEfficiencies
     }]);
 }
+
+function showTooltip(id) {
+    var tooltip = document.getElementById(id);
+    tooltip.style.display = 'block';
+    
+    // Hide the tooltip after 3 seconds
+    setTimeout(function() {
+      tooltip.style.display = 'none';
+    }, 3000);
+  }
+  

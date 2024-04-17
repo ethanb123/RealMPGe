@@ -66,7 +66,7 @@ input, select, button {
 }
 
 #vehicleList li {
-    border: 1px solid #6587e5;
+    border: 1px solid #269ffb;
     padding: 10px;
     margin: 10px 0;
     background-color: #f0f0f0;
@@ -82,13 +82,27 @@ input, select, button {
     bottom: 10px;
     right: 10px;
     width: 100px;
-    background-color: #6587e5;
+    background-color: #269ffb;
+    border-radius: 8px;
+}
+
+#addVehicleButton {
+    background-color: #269ffb;
+    border-radius: 8px;
+}
+
+#logo {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 15%;
+    margin-right: 2vw;
 }
 
 /* Tab Styles */
 .tab-container {
     width: 100%;
     display: flex;
+    margin-top: 10px;
 }
 
 .tab {
@@ -155,3 +169,34 @@ input, select, button {
         grid-area: vehicle-selection;
     }
 }
+
+.info-icon {
+    display: inline-block;
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+  
+  .tooltip {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  }
+  
+  /* Position the tooltip text - see examples below! */
+  .input-field {
+    position: relative;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .input-field:hover .tooltip {
+    display: block;
+  }
+  

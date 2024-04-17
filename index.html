@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="topbar" style="display: flex; justify-content: center; align-items: center;">
-        <img src="https://github.com/ethanb123/ev-mpg/blob/main/Data/Main-Logo.png?raw=true" alt="Logo" style="width: 12vh; height: 12vh; border-radius: 15%; margin-right: 2vw">
+        <img src="https://github.com/ethanb123/ev-mpg/blob/main/Data/Main-Logo.png?raw=true" id='logo'>
         <h1 style="font-size: 6vh">EV-MPG</h1>
     </div>
 
@@ -17,27 +17,42 @@
         
         <!-- Rates Box -->
         <div class="box" id="ratesBox">
-            <h2>Rates</h2>
-            <label for="gasPrice">Gas Price ($/gallon)</label>
-            <input type="number" id="gasPrice" placeholder="e.g., 3.20">
-            
-            <label for="electricPrice">Electric Price ($/kWh)</label>
-            <input type="number" id="electricPrice" placeholder="e.g., 0.19">
+            <h1>Fuel Prices</h1>
+
+            <div class="input-field">
+                <span class="info-icon" onclick="showTooltip('gasPriceTip')">Gasoline Price per Gallon</span>
+                <input type="number" id="gasPrice" name="gasPrice" placeholder="e.g., 3.48">
+                <div id="gasPriceTip" class="tooltip">Enter the current price of gasoline per gallon in US dollars.</div>
+            </div>
+
+            <div class="input-field">
+                <span class="info-icon" onclick="showTooltip('electricPriceTip')">Electric Price per kWh</span>
+                <input type="number" id="electricPrice" name="gasPrice" placeholder="e.g., 0.19">
+                <div id="electricPriceTip" class="tooltip">Enter the current price of electricity per kWh in US dollars.</div>
+            </div>
         </div>
         
         <!-- Usage Box -->
         <div class="box" id="usageBox">
-            <h2>Usage</h2>
-            <label for="milesYear">Miles per Year</label>
-            <input type="number" id="milesYear" placeholder="e.g., 12000">
-            
-            <label for="yearsOwnership">Years of Ownership</label>
-            <input type="number" id="yearsOwnership" placeholder="e.g., 5">
+            <h1>Vehicle Usage</h1>
+
+            <div class="input-field">
+                <span class="info-icon" onclick="showTooltip('annualMillageTip')">Annual Mileage</span>
+                <input type="number" id="milesYear" name="milesYear" placeholder="e.g., 12000">
+                <div id="annualMillageTip" class="tooltip">Enter the estimated number of miles driven per year.</div>
+            </div>
+
+            <div class="input-field">
+                <span class="info-icon" onclick="showTooltip('annualMillageTip')">Duration of Ownership</span>
+                <input type="number" id="yearsOwnership" name="yearsOwnership" placeholder="e.g., 5">
+                <div id="annualMillageTip" class="tooltip">Enter the estimated number of years of ownership.</div>
+            </div>
         </div>
         
         <!-- Vehicle Input Box -->
         <div class="box" id="vehicleBox">
-            <h2>Vehicle Input</h2>
+            <h1 id="vehicleInput">Vehicle Input</h1>
+            <label for="vehicleInput">Enter Vehicle Details Below</label>
             <div class="tab-container">
                 <span class="tab active-tab" onclick="showTab('automatic')">Automatic</span>
                 <span class="tab" onclick="showTab('manual')">Manual</span>
@@ -45,15 +60,15 @@
             
             <div id="automatic" class="content-box">
                 <select id="year-select">
-                    <option>Select Year</option>
+                    <option>Vehicle Year</option>
                 </select>
                 <select id="make-select">
-                    <option>Select Make</option>
+                    <option>Vehicle Make</option>
                 </select>
                 <select id="model-select">
-                    <option>Select Model</option>
+                    <option>Vehicle Model</option>
                 </select>
-                <label for="vehicleEfficiency">Efficiency</label>
+                <label for="vehicleEfficiency">Fuel Efficiency (MPG or EV-MPG)</label>
                 <input type="number" id="vehicleEfficiency" disabled>
 
                 <label for="vehicleType">Fuel Type</label>
@@ -69,14 +84,14 @@
                 <input type="text" id="vehicleEfficiencyManual" placeholder="Input MPG or mi/kWh">
             </div>
 
-            <button style="background-color: #6587e5" id="addVehicleButton">Add Vehicle</button>
+            <button id="addVehicleButton">Add Vehicle</button>
         </div>
         
         <!-- Vehicle List Box -->
         <div class="box" id="vehicle2Box">
-            <h2>Vehicle Selection</h2>
+            <h2 style="font-size:28px">Selected Vehicles for Comparison</h2>
             <ul style="list-style-type:none" id="vehicleList"></ul>
-            <button onclick="location.reload()">Clear</button>
+            <button id='clearButton' onclick="location.reload()">Clear</button>              
         </div>
         
         <!-- Include the ApexCharts library -->
